@@ -270,7 +270,7 @@ class _BaseStepperState extends State<BaseStepper> {
   /// A customized DottedLine.
   Widget _customizedDottedLine(int index, Axis axis) {
     return index < widget.children!.length - 1
-        ? Container(width: widget.lineLength, height: 5.0, color: widget.activeStep > index? widget.completedColor: widget.remainingColor)
+        ? Container(width: widget.lineLength, height: widget.lineHeight, color: widget.activeStep > index? widget.completedColor: widget.remainingColor)
         : Container();
   }
 
