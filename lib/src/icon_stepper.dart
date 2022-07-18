@@ -34,6 +34,12 @@ class IconStepper extends StatelessWidget {
   /// The color of a step when it is reached.
   final Color? activeStepColor;
 
+  /// The color of a step when it is Remaining.
+  final Color? remainingColor;
+
+  /// The color of a step when it is completed.
+  final Color? completedColor;
+
   /// The border color of a step when it is reached.
   final Color? activeStepBorderColor;
 
@@ -48,6 +54,9 @@ class IconStepper extends StatelessWidget {
 
   /// The length of the line that separates the steps.
   final double lineLength;
+
+  /// The Height of the line that separates the steps.
+  final double lineHeight;
 
   /// The radius of individual dot within the line that separates the steps.
   final double lineDotRadius;
@@ -85,11 +94,14 @@ class IconStepper extends StatelessWidget {
     this.stepColor,
     this.stepPadding = 1.0,
     this.activeStepColor,
+    this.completedColor,
+    this.remainingColor,
     this.activeStepBorderColor,
     this.activeStepBorderWidth = 0.5,
     this.activeStepBorderPadding = 5.0,
     this.lineColor,
     this.lineLength = 50.0,
+    this.lineHeight = 5.0,
     this.lineDotRadius = 1.0,
     this.stepRadius = 24.0,
     this.stepReachedAnimationEffect = Curves.bounceOut,
@@ -112,10 +124,13 @@ class IconStepper extends StatelessWidget {
       direction: direction,
       stepColor: stepColor,
       activeStepColor: activeStepColor,
+      remainingColor: remainingColor,
+      completedColor: completedColor,
       activeStepBorderColor: activeStepBorderColor,
       activeStepBorderWidth: activeStepBorderWidth,
       lineColor: lineColor,
       lineLength: lineLength,
+      lineHeight: lineHeight,
       lineDotRadius: lineDotRadius,
       stepRadius: stepRadius,
       stepReachedAnimationEffect: stepReachedAnimationEffect,
