@@ -1,11 +1,11 @@
-# im_stepper (Customized)
+# Fork of im_stepper (Customized)
 
 ## Originally Posted, Credits to:
 * https://github.com/imujtaba8488/package_im_stepper
 
 ## Recent Changes
 
-* Removed unused code
+* Removed unused code (not needed as per our requirements)
 * Dotted Line replace with Line (custom height, width)
 * Custom Color Indication for Action In-Progress, Action Done.
 
